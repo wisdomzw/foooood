@@ -1,0 +1,194 @@
+@import 'fonts';
+
+$color-primary: #EA433D;
+$box-shadow: 0 2px 4px rgba(0,0,0, 0.08);
+
+body {
+    background: #eff2f7;
+}
+
+.btn {
+    border: 1px solid $color-primary;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 10px;
+    color: $color-primary;
+    font-family: Muli-ExtraBold;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+
+    &-solid {
+        color: #ffffff;
+        background: $color-primary
+    }
+}
+
+
+h2 {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Muli-Bold", sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.app-wrapper {
+    width: 360px;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+}
+
+header {
+    nav {
+        box-shadow: $color-primary;
+        display: flex;
+        align-items: center;
+        padding: 18px 16px;
+
+        img {
+            margin-right: 16px;
+        }
+
+        h2 {
+            color: #1E2021;
+        }
+
+        span {
+            margin: 0 7px 0 auto;
+            color: $color-primary;
+            font-size: 12px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: "Muli-ExtraBold", sans-serif;
+        }
+    }
+
+    .timer {
+        background: #ffffff;
+        text-align: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        h2 {
+            padding-top: 15px;
+        }
+
+        p {
+            font-size: 12px;
+            color: #8E8F90;
+            text-transform: uppercase;
+            font-family: "Muli-Bold", sans-serif;
+            padding: 4px 0 16px;
+            margin: 0;
+        }   
+
+        .meter {        
+            padding-bottom: 10px;
+            margin: 0 18px;
+
+            .progress {
+                background: #F4F4F4;
+                display: block;
+                content: "";
+                height: 8px;
+                border-radius: 4px;
+                box-shadow: 0 1px 3px inset rgba(0,0,0, 0.07);
+
+                &:after {
+                    width: 62%;
+                    height: inherit;
+                    background: $color-primary;
+                    display: block;
+                    content: "";
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+.order {
+    margin: 24px 16px;
+    padding: 20px 15px;
+    background: #ffffff;    
+    border-radius: 5px;
+    font-family: Muli, sans-serif;
+    box-shadow: $box-shadow;
+    div {
+        border-bottom: 2px solid #E8E8E8;
+
+        &:first-child {
+            display: flex;
+            margin-bottom: 24px;
+            border: none;
+
+            h2 {
+                margin-left: 12px;
+            }
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &-instructions {
+        span {
+            color: #8E8F90;
+            font-size: 13px;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+    }
+
+    &-item {
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+            font-size: 13px;
+            color: #616263;
+        }
+    }
+}
+
+.address {
+    padding: 30px 16px;
+    background: #ffffff;
+
+    div {
+        display: flex;
+
+        button {
+            width: 100%;
+            flex: 1;
+
+            &:last-child {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    p {
+        font-family: Muli, sans-serif;
+        color: #8E8F90;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+}
+
+.cta {
+    margin: 25px 16px;
+
+    button {
+        width: 100%;
+    }
+}

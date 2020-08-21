@@ -1,1 +1,5 @@
-# foooood
+# Foooodie
+
+
+ - npm i
+ - gulp watch
